@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TypeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/projects',[ProjectController::class,'index'])->name('api.projects.index');
+
+// scrivo la rotta per i types
+Route::get('/types',[TypeController::class,'index'])->name('api.types.index');
