@@ -24,3 +24,4 @@ Route::get('/projects/{project}',[ProjectController::class,'show'])->name('api.p
 
 // scrivo la rotta per i types
 Route::get('/types',[TypeController::class,'index'])->name('api.types.index');
+Route::get('/types/{type}',[TypeController::class,'show'])->name('api.types.show');
