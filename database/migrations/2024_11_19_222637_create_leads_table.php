@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('leads', function (Blueprint $table) {
             $table->id();
+            $table->string('name',80);
+            $table->string('email',50);
+            $table->text('message');
             $table->timestamps();
         });
     }
