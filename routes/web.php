@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
+use App\Http\Controllers\Guest\LeadController;
 use App\Http\Controllers\Guest\ProjectController as GuestProjectController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -38,5 +39,7 @@ Route::name('guest.')->group(function(){
     Route::get('/', [GuestProjectController::class,'index'])->name('home');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('/projects', GuestProjectController::class)->only(['index','show']);
+
+    Route::get('/contact-us',[LeadController::class,'create'])->name('contact-us');
 
 });
