@@ -10,8 +10,9 @@
             </div>
         </div>
         <div class="row">
-            <form action="" class="col-12">
-                
+            <form action="{{ route('guest.leads.store')}}" method="POST" class="col-12">
+                @method('POST')
+                @csrf
             </form>
         </div>
     </div>
