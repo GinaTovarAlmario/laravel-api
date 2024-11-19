@@ -3,14 +3,14 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h1 class="fw-bold">
                     Contact us!
                 </h1>
             </div>
         </div>
-        <div class="row">
-            <form action="{{ route('guest.leads.store')}}" method="POST" class="col-12">
+        <div class="row justify-content-center">
+            <form action="{{ route('guest.leads.store')}}" method="POST" class="col-12 col-md-8 col-lg-6">
                 @method('POST')
                 @csrf
                 <div class="mb-3">
