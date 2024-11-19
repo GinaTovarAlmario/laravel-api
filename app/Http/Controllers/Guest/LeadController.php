@@ -9,6 +9,7 @@ class LeadController extends Controller
 {
     public function create(){
         // mostrare il form
+        return view('guest.pages.contact-us');
     }
     public function store(Request $request){
 
