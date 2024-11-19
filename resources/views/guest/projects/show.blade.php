@@ -12,7 +12,7 @@
                             AUTHOR: {{$project->author}}
                         </h6>
                         <p class="card-text">
-                            DESCRIPTION: {{ $project->content }}
+                            DESCRIPTION: {{ $project->description }}
                         </p>
                         <a href="{{route('guest.projects.index')}}" class="btn btn-primary">Go Back</a>
                     </div>
