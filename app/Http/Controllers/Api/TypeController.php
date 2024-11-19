@@ -15,4 +15,10 @@ class TypeController extends Controller
             "results" => $types,
         ]);
     }
+    public function show(Type $type){
+        return response()->json([
+            "success" => true,
+            "results" => $type,
+        ]);
+    }
 }
