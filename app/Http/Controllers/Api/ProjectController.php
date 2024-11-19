@@ -18,4 +18,13 @@ class ProjectController extends Controller
             ]
         );
     }
+    public function show(Project $project){
+        $project = Project::with('type','technologies')->orderBy('date','DESC')->paginate(10);
+        return response()->json(
+            [
+                "success"=> true,
+                "results"=> $project,
+            ]
+        );
+    }
 }
