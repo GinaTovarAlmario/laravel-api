@@ -10,9 +10,9 @@ class ProjectController extends Controller
 {
     public function index(){
         $projects = Project::orderBy('created_at', 'desc')->paginate(8);
-        return view('guest.projects.index',compact('posts'));
+        return view('guest.projects.index',compact('projects'));
     }
     public function show(Project $project){
-        return view('guest.projects.show', compact('post'));
+        return view('guest.projects.show', compact('project'));
     }
 }
