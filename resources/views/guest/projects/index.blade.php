@@ -29,7 +29,7 @@
                         </div>
                     @endforelse
                 <div>
-                    {{$project->links()}}
+                    {{$projects->links()}}
                 </div>
             </div>
         </div>
