@@ -40,6 +40,8 @@ Route::name('guest.')->group(function(){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('/projects', GuestProjectController::class)->only(['index','show']);
 
-    Route::get('/contact-us',[LeadController::class,'create'])->name('contact-us');
+    Route::get('/contact-us',[LeadController::class,'create'])->name('leads.create');
+    Route::post('/contact-us',[LeadController::class,'store'])->name('leads.store');
+
 
 });
