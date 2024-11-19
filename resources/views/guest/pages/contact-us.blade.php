@@ -21,8 +21,8 @@
                 </div>
                 <div class="mb-3">
                     <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-
                 </div>
+                <button type="submit" class="btn btn-primary">Send contact</button>
             </form>
         </div>
     </div>
