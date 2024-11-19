@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/projects',[ProjectController::class,'index'])->name('api.projects.index');
+Route::get('/projects/{project}',[ProjectController::class,'show'])->name('api.projects.show');
 
 // scrivo la rotta per i types
 Route::get('/types',[TypeController::class,'index'])->name('api.types.index');
