@@ -21,7 +21,7 @@
                             <p class="fs-4">
                                 {{substr($project->description,0,40) }}..
                             </p>
-                            <a href="{ route('guest.projects.show',$project)}" class="btn btn-outline-primary mb-3">Read More</a>
+                            <a href="{{ route('guest.projects.show',$project->id)}}" class="btn btn-outline-primary mb-3">Read More</a>
                         </div>
                     @empty
                         <div class="col-12">
