@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class LeadController extends Controller
 {
     public function create(){
-
+        // mostrare il form
     }
-    public function store(){
-        
+    public function store(Request $request){
+
     }
 }
