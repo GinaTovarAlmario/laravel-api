@@ -14,12 +14,15 @@
                 @method('POST')
                 @csrf
                 <div class="mb-3">
+                    <label for="name">Name</label>
                     <input class="form-control" type="text" name="name" id="name">
                 </div>
                 <div class="mb-3">
+                    <label for="email">Email</label>
                     <input class="form-control" type="email" name="email" id="email">
                 </div>
                 <div class="mb-3">
+                    <label for="message">Type your message</label>
                     <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send contact</button>
