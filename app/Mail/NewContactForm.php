@@ -30,6 +30,7 @@ class NewContactForm extends Mailable
     {
         return new Envelope(
             subject: 'New Contact Form',
+            replyTo: $this->lead->email
         );
     }
 
