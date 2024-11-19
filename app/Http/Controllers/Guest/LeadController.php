@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LeadStoreRequest;
 use Illuminate\Http\Request;
 
 class LeadController extends Controller
@@ -11,7 +12,7 @@ class LeadController extends Controller
         // mostrare il form
         return view('guest.pages.contact-us');
     }
-    public function store(Request $request){
+    public function store(LeadStoreRequest $request){
 
     }
 }
