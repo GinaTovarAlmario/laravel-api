@@ -13,6 +13,16 @@
             <form action="{{ route('guest.leads.store')}}" method="POST" class="col-12">
                 @method('POST')
                 @csrf
+                <div class="mb-3">
+                    <input class="form-control" type="text" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" type="email" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+
+                </div>
             </form>
         </div>
     </div>
