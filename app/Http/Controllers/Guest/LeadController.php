@@ -7,5 +7,10 @@ use Illuminate\Http\Request;
 
 class LeadController extends Controller
 {
-    //
+    public function create(){
+
+    }
+    public function store(){
+        
+    }
 }
