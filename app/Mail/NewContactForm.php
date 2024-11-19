@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Lead;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -12,11 +13,12 @@ use Illuminate\Queue\SerializesModels;
 class NewContactForm extends Mailable
 {
     use Queueable, SerializesModels;
+    public $lead;
 
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(Lead $lead)
     {
         //
     }
@@ -37,7 +39,7 @@ class NewContactForm extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.new-contact-form-email',
         );
     }
 
