@@ -12,13 +12,13 @@
     </h1>
     <p>Hai ricevuto un nuovo messaggio!📩📩📩📩</p>
     <p>name:
-
+        {{$lead->name}}
     </p>
     <p>email:
-
+        {{$lead->email}}
     </p>
     <p>message:
-
+        {{$lead->message}}
     </p>
 </body>
 </html>
